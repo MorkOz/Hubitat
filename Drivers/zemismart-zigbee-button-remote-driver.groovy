@@ -59,12 +59,12 @@ private sendButtonNumber() {
 }
 
 def installed() {
-    sendButtonNumber
+    sendButtonNumber()
     state.start = now()
 }
 
 def updated() {
-    sendButtonNumber
+    sendButtonNumber()
 }
 
 def refresh() {
@@ -75,7 +75,7 @@ def refresh() {
 }
 
 def configure() {
-    sendButtonNumber
+    sendButtonNumber()
    
     def configCmds = []
   for (int endpoint=1; endpoint<=3; endpoint++) {
